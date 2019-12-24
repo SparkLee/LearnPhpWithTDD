@@ -11,7 +11,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="TDD Scaffold Test Suite">
+        <testsuite name="PHP TDD Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
