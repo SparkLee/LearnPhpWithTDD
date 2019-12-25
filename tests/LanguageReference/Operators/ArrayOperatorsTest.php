@@ -28,6 +28,12 @@ class ArrayOperatorsTest extends TestCase
         $a = [1, 2, 3];
         $b = ['name' => 'Spark Lee', 'age' => 18];
         $this->assertEquals([1, 2, 3, 'name' => 'Spark Lee', 'age' => 18], $a + $b);
+        // 只要 key 相同，数组元素的书写顺序是无关紧要的
+        $this->assertEquals([1, 2, 3, 'name' => 'Spark Lee', 'age' => 18], $b + $a);
+        $this->assertEquals(['name' => 'Spark Lee', 'age' => 18, 1, 2, 3], $a + $b);
+        $this->assertEquals(['name' => 'Spark Lee', 'age' => 18, 1, 2, 3], $b + $a);
+        $this->assertEquals([1, 2, 'name' => 'Spark Lee', 'age' => 18, 3], $a + $b);
+        $this->assertEquals([1, 'age' => 18, 'name' => 'Spark Lee', 2, 3], $b + $a);
 
         $a = [1, 2, 3];
         $b = [];
