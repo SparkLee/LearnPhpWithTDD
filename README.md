@@ -1,5 +1,7 @@
 # 以 TDD 的方式学习 PHP 语言
 
+[![Build Status](https://travis-ci.com/SparkLee/LearnPhpWithTDD.svg?branch=master)](https://travis-ci.com/SparkLee/LearnPhpWithTDD)
+
 #### 下载安装 Composer 依赖包
 > 前置条件：本机已经配置好 composer 命令
 ```shell script
