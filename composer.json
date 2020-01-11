@@ -1,7 +1,7 @@
 {
-    "name": "sparklee/php-tdd-scaffold",
+    "name": "sparklee/learn-php-with-tdd",
     "type": "project",
-    "description": "PHP TDD（测试驱动开发）脚手架",
+    "description": "以 TDD 的方式学习 PHP 语言",
     "keywords": [
         "TDD",
         "PHPUnit",
@@ -32,5 +32,11 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "phpunit": "phpunit -vvv",
+        "test": [
+            "@phpunit"
+        ]
+    }
 }
