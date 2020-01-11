@@ -5,6 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: See php version
+      run: php -v
+    - name: See composer version
+      run: composer --version
+    - name: See phpunit version
+      run: phpunit --version
     - name: Validate composer.json and composer.lock
       run: composer validate
     - name: Install dependencies
