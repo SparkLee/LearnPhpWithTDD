@@ -1,7 +1,7 @@
 name: PHP CI
 on: [push]
 jobs:
-  Run Test Suite:
+  RunTestSuite:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
