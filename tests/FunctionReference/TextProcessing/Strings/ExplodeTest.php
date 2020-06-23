@@ -122,11 +122,11 @@ class ExplodeTest extends TestCase
     public function test_Should_return_an_empty_array_Given_a_string_with_4_delimiters_and_limit_negative_greater_than_or_equal_5()
     {
         $arr = explode(',', 'abc,中国人,123,东西南北,-+', -5);
-        $this->assertIsArray($arr);
+        $this->assertTrue(is_array($arr));
         $this->assertCount(0, $arr);
 
         $arr = explode(',', 'abc,中国人,123,东西南北,-+', -10);
-        $this->assertIsArray($arr);
+        $this->assertTrue(is_array($arr));
         $this->assertCount(0, $arr);
     }
 }
